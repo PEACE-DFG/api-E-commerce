@@ -6,12 +6,696 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="bootstrap/all.min.css">
     <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="product.css">
     <title>Document</title>
 </head>
-<body>
+<body class="bg-dark text-light">
+    <nav class="navbar navbar-light bg-light fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand fa-fade" href="#"> <i   style="font-size: 40px; " class="fa fa-snowflake fa-spin rotate"></i><span class="display-5  title">  Arik.Biz</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><span>Menu</span></h5>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html"><span>Home</span></a>
+                  </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="product.html"><span>Products</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"><span>Shop</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><span>Blog</span></a>
+                  </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Categories
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                    <li><a class="dropdown-item" href="#">Mobiles & Laptops     <i class="fa-solid fa-arrow-right"></i></a></li>
+                    <li><a class="dropdown-item" href="#">Perfume & Scents   <i class="fa-solid fa-arrow-right"></i></a></li>
+                    <li><a class="dropdown-item" href="#">Skin & Beauty   <i class="fa-solid fa-arrow-right"></i></a></li>
+                    <li><a class="dropdown-item" href="#">Foods & Drinks  <i class="fa-solid fa-arrow-right"></i></a></li>
+                    <li><a class="dropdown-item" href="#">  Household Ligthening  <i class="fa-solid fa-arrow-right"></i></a></li>
+                    <li><a class="dropdown-item" href="#">HandCrafts  <i class="fa-solid fa-arrow-right"></i></a></li>
+                    <li><a class="dropdown-item" href="#">KeyHolders   <i class="fa-solid fa-arrow-right"></i></a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Blog</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+
+      <!-- carousel   section -->
+
+      <div id="carouselExampleDark" class="carousel carousel-light carousel-fade slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img src="images/carm1.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block text-dark">
+              <h3>SHOPPING MADE EASY</h3>
+              <p>AFFORDABLE ITEMS ARE AVAILABLE </p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="images/carot.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block text-dark">
+              <h3>ONGOING BONANZA</h3>
+              <p><span><h1>30% <span style="font-size: 30px;"> Discount Rate</span></h1></span></p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/carm.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block text-light">
+              <h3> FREE DELIVERY</h3>
+              <p><span><h1>FAST AND RELIABLE <span style="font-size: 30px;"> DELIVERY</span></h1></span></p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+
+      <section class="mt-4">
+        <div>
+            <p>
+                <button class="btn btn-primary container-fluid" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+                  Category
+                </button>
+              </p>
+              <div style="min-height: 120px;">
+                <div class="collapse collapse-horizontal" id="collapseWidthExample">
+                  <div class="card card-body" style="width: 200px;">
+                    <p id="category" class="text-dark"> </p>
+                  </div>
+                </div>
+              </div>
+          </div>
+      </section>
+
+      <section class="container-fluid mt-0 pt-0 w-100 h-100">
+        <div class="row gy-4">
+            <div class="col ">
+                <div class="card" style="width: 15rem;">
+                    <img id="pimage1" class="card-img-top" alt="...">
+                <p ><i class="fa-solid fa-star  " style="color: orange;"></i><i class="fa-solid fa-star  " style="color: orange;"></i><i class="fa-solid fa-star  " style="color: orange;"></i><i class="fa-solid fa-star  " style="color: orange;"></i><i class="fa-solid fa-star  " style="color: orange;"></i></p>
+
+
+                    <!-- <p   id="image1" class="w-100 img-fluid"></p> -->
+
+                    <div class="card-body">
+                      <h5 id="ptitle"></h5>
+                      <h6 id="pbrand"><i></i></h6>
+                      <p id="pdescription"></p>
+                      <a href="#" id="pprice" class="btn btn-primary"></a>
+                      <p class="mt-3 text-success" id="pdiscount"></p>
+                      <p id="prating" class="mt-2 text-info"></p>
+                      <p id="pstock" class="mt-2 mb-4 text-warning"></p>
+                      
+
+                    </div>
+                  </div>
+
+            </div>
+
+            <div class="col">
+                <div class="card" style="width: 15rem;">
+                    <img id="pimage2" class="card-img-top" alt="...">
+                <p ><i class="fa-solid fa-star  " style="color: orange;"></i><i class="fa-solid fa-star  " style="color: orange;"></i><i class="fa-solid fa-star  " style="color: orange;"></i><i class="fa-solid fa-star  " style="color: orange;"></i><i class="fa-solid fa-star  " style="color: orange;"></i></p>
+
+                    <div class="card-body">
+                      <h5 class="card-title" id="ptitle1"></h5>
+                      <h6 id="pbrand4"><i></i></h6>
+
+                      <p class="card-text"  id="pdescription1"></p>
+                      <a href="#" class="btn btn-primary" id="pprice1"></a>
+                      <p class="mt-3 text-success" id="pdiscount1"></p>
+                      <p id="prating1" class="mt-1 text-info"></p>
+                      <p id="pstock1" class="mt-1 mb-4 text-warning"></p>
+
+                    </div>
+                  </div>
+
+            </div>
+            <div class="col">
+                <div class="card" style="width: 15rem;">
+                    <img id="pimage3" class="card-img-top" alt="...">
+                <p ><i class="fa-solid fa-star  " style="color: orange;"></i><i class="fa-solid fa-star  " style="color: orange;"></i><i class="fa-solid fa-star  " style="color: orange;"></i><i class="fa-solid fa-star  " style="color: orange;"></i><i class="fa-solid fa-star  " style="color: orange;"></i></p>
+
+                    <div class="card-body">
+                      <h5 class="card-title" id="ptitle2"></h5>
+                      <h6 id="pbrand1"><i></i></h6>
+
+                      <p class="card-text"  id="pdescription2"></p>
+                      <a href="#" class="btn btn-primary" id="pprice2"></a>
+                      <p class="mt-1 text-success" id="pdiscount2"></p>
+                      <p id="prating2" class=" text-info"></p>
+                      <p id="pstock2" class=" text-warning"></p>
+
+                    </div>
+                  </div>
+
+            </div>
+            <div class="col">
+                <div class="card" style="width: 15rem;">
+                    <img id="pimage4" class="card-img-top" alt="...">
+                <p ><i class="fa-solid fa-star  " style="color: orange;"></i><i class="fa-solid fa-star  " style="color: orange;"></i><i class="fa-solid fa-star  " style="color: orange;"></i><i class="fa-solid fa-star  " style="color: orange;"></i><i class="fa-solid fa-star  " style="color: orange;"></i></p>
+
+                    <div class="card-body">
+                      <h5 class="card-title" id="ptitle3"></h5>
+                      <h6 id="pbrand2"><i></i></h6>
+
+                      <p class="card-text"  id="pdescription3"></p>
+                      <a href="#" class="btn btn-primary" id="pprice3"></a>
+                      <p class="mt-3 text-success" id="pdiscount3"></p>
+                      <p id="prating3" class="mt-1 text-info"></p>
+                      <p id="pstock3" class="mt-1 mb-3 text-warning"></p>
+
+                    </div>
+                  </div>
+
+            </div>
+
+            <div class="col">
+                <div class="card" style="width: 15rem;">
+                    <img id="pimage5" class="card-img-top" alt="...">
+                <p ><i class="fa-solid fa-star  " style="color: orange;"></i><i class="fa-solid fa-star  " style="color: orange;"></i><i class="fa-solid fa-star  " style="color: orange;"></i><i class="fa-solid fa-star  " style="color: orange;"></i><i class="fa-solid fa-star  " style="color: orange;"></i></p>
+
+                    <div class="card-body">
+                      <h5 class="card-title" id="ptitle4"></h5>
+                      <h6 id="pbrand3"><i></i></h6>
+
+                      <p class="card-text"  id="pdescription4"></p>
+                      <a href="#" class="btn btn-primary" id="pprice4"></a>
+                      <p class="mt-3 text-success" id="pdiscount4"></p>
+                      <p id="prating4" class="mt-1 text-info"></p>
+                      <p id="pstock4" class="mt-2 mb-4 text-warning"></p>
+
+                    </div>
+                  </div>
+
+            </div>
+        </div>
+      </section>
+
+
+
+
+      <section class="mt-5">
+        <div>
+            <p>
+                <button class="btn btn-primary container-fluid" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+                  Category
+                </button>
+              </p>
+              <div style="min-height: 120px;">
+                <div class="collapse collapse-horizontal" id="collapseWidthExample">
+                  <div class="card card-body" style="width: 200px;">
+                    <p id="category1" class="text-dark"> </p>
+                  </div>
+                </div>
+              </div>
+          </div>
+      </section>
+
+
+      <section class="container-fluid mt-0 mb-5 pt-0 w-100 h-100">
+        <div class="row gy-4">
+            <div class="col ">
+                <div class="card" style="width: 15rem;">
+                    <img id="gimage1" class="card-img-top" alt="...">
+                <p ><i class="fa-solid fa-star  " style="color: orange;"></i><i class="fa-solid fa-star  " style="color: orange;"></i><i class="fa-solid fa-star  " style="color: orange;"></i><i class="fa-solid fa-star  " style="color: orange;"></i><i class="fa-solid fa-star  " style="color: orange;"></i></p>
+
+
+                    <!-- <p   id="image1" class="w-100 img-fluid"></p> -->
+
+                    <div class="card-body">
+                      <h5 id="gtitle"></h5>
+                      <h6 id="gbrand"><i></i></h6>
+                      <p id="gdescription"></p>
+                      <a href="#" id="gprice" class="btn btn-primary"></a>
+                      <p class="mt-3 text-success" id="gdiscount"></p>
+                      <p id="grating" class="mt-2 text-info"></p>
+                      <p id="gstock" class="mt-2  text-warning"></p>
+                      
+
+                    </div>
+                  </div>
+
+            </div>
+
+            <div class="col">
+                <div class="card" style="width: 15rem;">
+                    <img id="gimage2" class="card-img-top" alt="...">
+                <p ><i class="fa-solid fa-star  " style="color: orange;"></i><i class="fa-solid fa-star  " style="color: orange;"></i><i class="fa-solid fa-star  " style="color: orange;"></i><i class="fa-solid fa-star  " style="color: orange;"></i><i class="fa-solid fa-star  " style="color: orange;"></i></p>
+
+                    <div class="card-body mt-1">
+                      <h5 class="card-title mt-4" id="gtitle1"></h5>
+                      <h6 id="gbrand4" class=" mt-2"><i></i></h6>
+
+                      <p class="card-text"  id="gdescription1"></p>
+                      <a href="#" class="btn btn-primary" id="gprice1"></a>
+                      <p class="mt-4 text-success" id="gdiscount1"></p>
+                      <p id="grating1" class="mt-4 mb-3 text-info"></p>
+                      <p id="gstock1" class="mt-4 mb-4 text-warning"></p>
+
+                    </div>
+                  </div>
+
+            </div>
+            <div class="col">
+                <div class="card" style="width: 15rem;">
+                    <img id="gimage3" class="card-img-top" alt="...">
+                <p ><i class="fa-solid fa-star  " style="color: orange;"></i><i class="fa-solid fa-star  " style="color: orange;"></i><i class="fa-solid fa-star  " style="color: orange;"></i><i class="fa-solid fa-star  " style="color: orange;"></i><i class="fa-solid fa-star  " style="color: orange;"></i></p>
+
+                    <div class="card-body mt-3">
+                      <h5 class="card-title" id="gtitle2"></h5>
+                      <h6 id="gbrand1"><i></i></h6>
+
+                      <p class="card-text"  id="gdescription2"></p>
+                      <a href="#" class="btn btn-primary" id="gprice2"></a>
+                      <p class="mt-1 text-success" id="gdiscount2"></p>
+                      <p id="grating2" class=" text-info"></p>
+                      <p id="gstock2" class=" text-warning"></p>
+
+                    </div>
+                  </div>
+
+            </div>
+            <div class="col">
+                <div class="card" style="width: 15rem;">
+                    <img id="gimage4" class="card-img-top" alt="...">
+                <p ><i class="fa-solid fa-star  " style="color: orange;"></i><i class="fa-solid fa-star  " style="color: orange;"></i><i class="fa-solid fa-star  " style="color: orange;"></i><i class="fa-solid fa-star  " style="color: orange;"></i><i class="fa-solid fa-star  " style="color: orange;"></i></p>
+
+                    <div class="card-body">
+                      <h5 class="card-title" id="gtitle3"></h5>
+                      <h6 id="gbrand2"><i></i></h6>
+
+                      <p class="card-text"  id="gdescription3"></p>
+                      <a href="#" class="btn btn-primary" id="gprice3"></a>
+                      <p class="mt-3 text-success" id="gdiscount3"></p>
+                      <p id="grating3" class="mt-1 text-info"></p>
+                      <p id="gstock3" class="mt-1 mb-3 text-warning"></p>
+
+                    </div>
+                  </div>
+
+            </div>
+
+            <div class="col">
+                <div class="card" style="width: 15rem;">
+                    <img id="gimage5" class="card-img-top" alt="...">
+                <p ><i class="fa-solid fa-star  " style="color: orange;"></i><i class="fa-solid fa-star  " style="color: orange;"></i><i class="fa-solid fa-star  " style="color: orange;"></i><i class="fa-solid fa-star  " style="color: orange;"></i><i class="fa-solid fa-star  " style="color: orange;"></i></p>
+
+                    <div class="card-body">
+                      <h5 class="card-title" id="gtitle4"></h5>
+                      <h6 id="gbrand3"><i></i></h6>
+
+                      <p class="card-text"  id="gdescription4"></p>
+                      <a href="#" class="btn btn-primary" id="gprice4"></a>
+                      <p class="mt-3 text-success" id="gdiscount4"></p>
+                      <p id="grating4" class="mt-1 text-info"></p>
+                      <p id="gstock4" class="mt-2 mb-4 text-warning"></p>
+
+                    </div>
+                  </div>
+
+            </div>
+        </div>
+      </section>
+
+
+      <section class="mt-5">
+        <div>
+            <p>
+                <button class="btn btn-primary container-fluid" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+                  Category
+                </button>
+              </p>
+              <div style="min-height: 120px;">
+                <div class="collapse collapse-horizontal" id="collapseWidthExample">
+                  <div class="card card-body" style="width: 200px;">
+                    <p id="category2" class="text-dark"> </p>
+                  </div>
+                </div>
+              </div>
+          </div>
+      </section>
+
+
+      <section class="container-fluid mt-0 mb-5 pt-0 w-100 h-100">
+        <div class="row gy-4">
+            <div class="col ">
+                <div class="card" style="width: 15rem;">
+                    <img id="simage1" class="card-img-top" alt="...">
+                <p ><i class="fa-solid fa-star  " style="color: orange;"></i><i class="fa-solid fa-star  " style="color: orange;"></i><i class="fa-solid fa-star  " style="color: orange;"></i><i class="fa-solid fa-star  " style="color: orange;"></i><i class="fa-solid fa-star  " style="color: orange;"></i></p>
+
+
+                    <!-- <p   id="image1" class="w-100 img-fluid"></p> -->
+
+                    <div class="card-body">
+                      <h5 id="stitle"></h5>
+                      <h6 id="sbrand"><i></i></h6>
+                      <p id="sdescription"></p>
+                      <a href="#" id="sprice" class="btn btn-primary"></a>
+                      <p class="mt-3 text-success" id="sdiscount"></p>
+                      <p id="srating" class="mt-2 text-info"></p>
+                      <p id="sstock" class="mt-2  text-warning"></p>
+                      
+
+                    </div>
+                  </div>
+
+            </div>
+
+            <div class="col">
+                <div class="card" style="width: 15rem;">
+                    <img id="simage2" class="card-img-top" alt="...">
+                <p ><i class="fa-solid fa-star  " style="color: orange;"></i><i class="fa-solid fa-star  " style="color: orange;"></i><i class="fa-solid fa-star  " style="color: orange;"></i><i class="fa-solid fa-star  " style="color: orange;"></i><i class="fa-solid fa-star  " style="color: orange;"></i></p>
+
+                    <div class="card-body ">
+                      <h5 class="card-title " id="stitle1"></h5>
+                      <h6 id="sbrand4" class=" "><i></i></h6>
+
+                      <p class="card-text"  id="sdescription1"></p>
+                      <a href="#" class="btn btn-primary" id="sprice1"></a>
+                      <p class="mt-3 text-success" id="sdiscount1"></p>
+                      <p id="srating1" class="mt-1  text-info"></p>
+                      <p id="sstock1" class="mt-1 text-warning"></p>
+
+                    </div>
+                  </div>
+
+            </div>
+            <div class="col">
+                <div class="card" style="width: 15rem;">
+                    <img id="simage3" class="card-img-top" alt="...">
+                <p ><i class="fa-solid fa-star  " style="color: orange;"></i><i class="fa-solid fa-star  " style="color: orange;"></i><i class="fa-solid fa-star  " style="color: orange;"></i><i class="fa-solid fa-star  " style="color: orange;"></i><i class="fa-solid fa-star  " style="color: orange;"></i></p>
+
+                    <div class="card-body ">
+                      <h5 class="card-title" id="stitle2"></h5>
+                      <h6 id="sbrand1"><i></i></h6>
+
+                      <p class="card-text"  id="sdescription2"></p>
+                      <a href="#" class="btn btn-primary" id="sprice2"></a>
+                      <p class="mt-3 text-success" id="sdiscount2"></p>
+                      <p id="srating2" class=" text-info"></p>
+                      <p id="sstock2" class=" text-warning"></p>
+
+                    </div>
+                  </div>
+
+            </div>
+            <div class="col">
+                <div class="card" style="width: 15rem;">
+                    <img id="simage4" class="card-img-top" alt="...">
+                <p ><i class="fa-solid fa-star  " style="color: orange;"></i><i class="fa-solid fa-star  " style="color: orange;"></i><i class="fa-solid fa-star  " style="color: orange;"></i><i class="fa-solid fa-star  " style="color: orange;"></i><i class="fa-solid fa-star  " style="color: orange;"></i></p>
+
+                    <div class="card-body">
+                      <h5 class="card-title" id="stitle3"></h5>
+                      <h6 id="sbrand2"><i></i></h6>
+
+                      <p class="card-text"  id="sdescription3"></p>
+                      <a href="#" class="btn btn-primary" id="sprice3"></a>
+                      <p class="mt-4 text-success" id="sdiscount3"></p>
+                      <p id="srating3" class="mt-1 text-info"></p>
+                      <p id="sstock3" class="mt-1 mb-3 text-warning"></p>
+
+                    </div>
+                  </div>
+
+            </div>
+
+            <div class="col">
+                <div class="card" style="width: 15rem;">
+                    <img id="simage5" class="card-img-top" alt="...">
+                <p ><i class="fa-solid fa-star  " style="color: orange;"></i><i class="fa-solid fa-star  " style="color: orange;"></i><i class="fa-solid fa-star  " style="color: orange;"></i><i class="fa-solid fa-star  " style="color: orange;"></i><i class="fa-solid fa-star  " style="color: orange;"></i></p>
+
+                    <div class="card-body">
+                      <h5 class="card-title" id="stitle4"></h5>
+                      <h6 id="sbrand3"><i></i></h6>
+
+                      <p class="card-text"  id="sdescription4"></p>
+                      <a href="#" class="btn btn-primary" id="sprice4"></a>
+                      <p class="mt-3 text-success" id="sdiscount4"></p>
+                      <p id="srating4" class="mt-1 text-info"></p>
+                      <p id="sstock4" class="mt-2 mb-3 text-warning"></p>
+
+                    </div>
+                  </div>
+
+            </div>
+        </div>
+      </section>
+
+
+      <section class="mt-5">
+        <div>
+            <p>
+                <button class="btn btn-primary container-fluid" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+                  Category
+                </button>
+              </p>
+              <div style="min-height: 120px;">
+                <div class="collapse collapse-horizontal" id="collapseWidthExample">
+                  <div class="card card-body" style="width: 200px;">
+                    <p id="category3" class="text-dark"> </p>
+                  </div>
+                </div>
+              </div>
+          </div>
+      </section>
+
+
+
+
+      <section class="container-fluid mt-0 mb-5 pt-0 w-100 h-100">
+        <div class="row gy-4">
+            <div class="col ">
+                <div class="card" style="width: 15rem;">
+                    <img id="limage1" class="card-img-top" alt="...">
+                <p ><i class="fa-solid fa-star  " style="color: orange;"></i><i class="fa-solid fa-star  " style="color: orange;"></i><i class="fa-solid fa-star  " style="color: orange;"></i><i class="fa-solid fa-star  " style="color: orange;"></i><i class="fa-solid fa-star  " style="color: orange;"></i></p>
+
+
+                    <!-- <p   id="image1" class="w-100 img-fluid"></p> -->
+
+                    <div class="card-body mt-5">
+                      <h5 id="ltitle" class="mt-3"></h5>
+                      <h6 id="lbrand" class="mt-2"><i></i></h6>
+                      <p id="ldescription" class="mt-4"></p>
+                      <a href="#" id="lprice"  class="btn btn-primary mt-1"></a>
+                      <p class="mt-4 text-success" id="ldiscount"></p>
+                      <p id="lrating" class="mt-4 text-info"></p>
+                      <p id="lstock" class="mt-4  text-warning"></p>
+                      
+
+                    </div>
+                  </div>
+
+            </div>
+
+            <div class="col">
+                <div class="card" style="width: 15rem;">
+                    <img id="limage2" class="card-img-top" alt="...">
+                <p ><i class="fa-solid fa-star  " style="color: orange;"></i><i class="fa-solid fa-star  " style="color: orange;"></i><i class="fa-solid fa-star  " style="color: orange;"></i><i class="fa-solid fa-star  " style="color: orange;"></i><i class="fa-solid fa-star  " style="color: orange;"></i></p>
+
+                    <div class="card-body ">
+                      <h5 class="card-title " id="ltitle1"></h5>
+                      <h6 id="lbrand4" class=" "><i></i></h6>
+
+                      <p class="card-text"  id="ldescription1"></p>
+                      <a href="#" class="btn btn-primary" id="lprice1"></a>
+                      <p class="mt-3 text-success" id="ldiscount1"></p>
+                      <p id="lrating1" class="mt-1  text-info"></p>
+                      <p id="lstock1" class="mt-1 text-warning"></p>
+
+                    </div>
+                  </div>
+
+            </div>
+            <div class="col">
+                <div class="card" style="width: 15rem;">
+                    <img id="limage3" class="card-img-top" alt="...">
+                <p ><i class="fa-solid fa-star  " style="color: orange;"></i><i class="fa-solid fa-star  " style="color: orange;"></i><i class="fa-solid fa-star  " style="color: orange;"></i><i class="fa-solid fa-star  " style="color: orange;"></i><i class="fa-solid fa-star  " style="color: orange;"></i></p>
+
+                    <div class="card-body mt-4 ">
+                      <h5 class="card-title mt-3" id="ltitle2"></h5>
+                      <h6 id="lbrand1" class="mt-2"><i></i></h6>
+
+                      <p class="card-text"  id="ldescription2"></p>
+                      <a href="#" class="btn btn-primary" id="lprice2"></a>
+                      <p class="mt-4 text-success" id="ldiscount2"></p>
+                      <p id="lrating2" class=" mt-4 text-info"></p>
+                      <p id="lstock2" class=" mt-4 text-warning"></p>
+
+                    </div>
+                  </div>
+
+            </div>
+            <div class="col">
+                <div class="card" style="width: 15rem;">
+                    <img id="limage4" class="card-img-top" alt="...">
+                <p ><i class="fa-solid fa-star  " style="color: orange;"></i><i class="fa-solid fa-star  " style="color: orange;"></i><i class="fa-solid fa-star  " style="color: orange;"></i><i class="fa-solid fa-star  " style="color: orange;"></i><i class="fa-solid fa-star  " style="color: orange;"></i></p>
+
+                    <div class="card-body mt-5">
+                      <h5 class="card-title mt-3" id="ltitle3"></h5>
+                      <h6 id="lbrand2" class="mt-3"><i></i></h6>
+
+                      <p class="card-text mt-4"  id="ldescription3"></p>
+                      <a href="#" class="btn btn-primary" id="lprice3"></a>
+                      <p class="mt-4 text-success" id="ldiscount3"></p>
+                      <p id="lrating3" class="mt-4 text-info"></p>
+                      <p id="lstock3" class="mt-3 mb-3 text-warning"></p>
+
+                    </div>
+                  </div>
+
+            </div>
+
+            <div class="col">
+                <div class="card" style="width: 15rem;">
+                    <img id="limage5" class="card-img-top" alt="...">
+                <p ><i class="fa-solid fa-star  " style="color: orange;"></i><i class="fa-solid fa-star  " style="color: orange;"></i><i class="fa-solid fa-star  " style="color: orange;"></i><i class="fa-solid fa-star  " style="color: orange;"></i><i class="fa-solid fa-star  " style="color: orange;"></i></p>
+
+                    <div class="card-body mt-4">
+                      <h5 class="card-title mt-3" id="ltitle4"></h5>
+                      <h6 id="lbrand3"><i></i></h6>
+
+                      <p class="card-text mt-3"  id="ldescription4"></p>
+                      <a href="#" class="btn btn-primary" id="lprice4"></a>
+                      <p class="mt-3 text-success" id="ldiscount4"></p>
+                      <p id="lrating4" class="mt-4 text-info"></p>
+                      <p id="lstock4" class="mt-4 mb-3 text-warning"></p>
+
+                    </div>
+                  </div>
+
+            </div>
+        </div>
+      </section>
+
+
+
+      <section class="container-fluid bg-light text-black" style="display: flex; flex-wrap:wrap;">
+
+        <div>
+            <img src="images/headset.webp" alt="" class="img-fluid " width="600px"  >
+        </div>
+       
+        <div class="mt-5">
+            <h2>Get <span>20%</span> Off Discount Coupon</h2>
+            <p>By Subscribing Our NewsLetter</p>
+            
+
+            <form class="row g-3">
+                <div class="col-auto">
+                  <label for="inputemail" class="visually-hidden"></label>
+                  <input type="email" class="form-control" id="inputemail" placeholder="✉ EMAIL ADDRESS" required>
+                </div>
+                <div class="col-auto">
+                  <button type="submit" class="btn btn-primary mb-3">GET COUPON</button>
+                </div>
+              </form>
+        </div>
+
+    </section>
+    <section class="container mt-5">
+        <div class="text-center mt-5">
+    <a class="navbar-brand fa-fade" href="#"> <i   style="font-size: 40px; " class="fa fa-snowflake fa-spin rotate"></i><span class="display-5  title">  Arik.Biz</span></a>
+
+    <hr class="container">
+        </div>
+    </section>
+
+    <section class="container mt-4">
+
+        <div class="row">
+            <div class="col-md">
+                <h5>About Us</h5>
+                <p>We know there are a lot of threa developers our but we pride into a firm in the industry.</p>
+
+
+            </div>
+            <div class="col-md">
+                <h5>Feature</h5>
+                <p>About Us</p>
+                <p>Terms and Condition</p>
+                <p>Best Products</p>
+
+
+            </div>
+            <div class="col-md">
+                <h5>General Links</h5>
+                <p>Blog </p>
+                <p> Tracking Order</p>
+                <p>Become Seller</p>
+
+
+            </div>
+            <div class="col-md">
+                <h5>Helpful</h5>
+                <p>Flash Sale</p>
+                <p>FAQ</p>
+                <p>Support</p>
+
+
+            </div>
+
+        </div>
+    </section>
+
+    <hr class="container">
+
+    <div class="row container-fluid  foot" >
+        <div class="col  busted">
+         <p> <i class="fa-brands fa-facebook"></i> 
+                <i class="fa-brands fa-instagram"></i>  
+                    <i class="fa-brands fa-youtube"></i>  
+                        <i class="fa-solid fa-copyright"></i>
+                        <span>2023 DESIGN by CODEMaster</span>
+                    </p>
+        </div>
+        <div class="col ">
+         <img src="images/payment-getways.png" class="img-fluid" class="imager" alt="">
+        </div>
+      </div>
+   
+
+
     
 
     <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="index.js"></script> -->
     <script src="product.js"></script>
 </body>
 </html>

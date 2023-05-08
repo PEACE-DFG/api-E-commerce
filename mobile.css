@@ -2,3 +2,53 @@
     width: 100%;
     height: 500px;
 }
+.word{
+    color: black;
+}
+.card{
+    color: black;
+    margin: auto;
+
+}
+@media(max-width:513px){
+    .card{
+        color: black;
+        text-align: center;
+        margin: auto;
+    }
+
+}
+
+.brand{
+    border: 1px solid grey;
+    padding: 10px;
+}
+
+.branding{
+    border: 1px solid grey;
+    padding: 10px;
+
+
+
+}.busted{
+    margin-left: 90px;
+}
+@media(max-width:500px){
+    .word{
+         font-size: 10px;
+    }
+}
+@media(max-width:900px){
+   .foot{
+    display: inline-block;
+    flex-direction: column;
+    /* padding-left: 20px; */
+   }
+   .imager{
+    padding-left: 20px;
+   }
+   .busted{
+    /* flex-direction:row; */
+    margin-left: 0px;
+   }
+}

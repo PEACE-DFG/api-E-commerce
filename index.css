@@ -34,6 +34,12 @@
     box-shadow: 3px 3px 2px grey;
    
 }
+#time{
+    position: fixed;
+    top: 100px;
+    z-index: 5;
+    left: 20px;
+}
 
 @media(max-width:513px){
     .card{

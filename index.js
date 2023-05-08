@@ -18,6 +18,17 @@ fetch('https://dummyjson.com/products')
     let stock1=data.products[0].stock
 
 
+
+    // let current_date= new Date()
+    // let hours = current_date.getHours();
+    // let minutes = current_date.getMinutes();
+    // let seconds =current_date.getSeconds()
+    // document.getElementById('time').innerHTML=`${hours}: ${minutes}: ${seconds}`;
+    // console.log(current_date)
+
+    
+
+
     document.getElementById('category').innerHTML=category1
 
     let brand2=data.products[1].brand

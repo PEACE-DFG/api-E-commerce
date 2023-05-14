@@ -160,7 +160,7 @@ fetch('https://dummyjson.com/products')
 
 
 
-  let brand4=data.products[5].brand
+  // let brand4=data.products[5].brand
   let category4=data.products[5].category
   let title4 = data.products[5].title
   let description4=data.products[5].description
@@ -175,11 +175,11 @@ fetch('https://dummyjson.com/products')
 
   //document.getElementById("category3").innerHTML=category4
 
-  document.getElementById("lbrand").innerHTML="Brand: " + brand4
-  document.getElementById("lbrand1").innerHTML="Brand: " + brand4
-  document.getElementById("lbrand2").innerHTML="Brand: " + brand4
-  document.getElementById("lbrand3").innerHTML="Brand: " + brand4
-  document.getElementById("lbrand4").innerHTML="Brand: " + brand4
+  // document.getElementById("lbrand").innerHTML="Brand: " + brand4
+  // document.getElementById("lbrand1").innerHTML="Brand: " + brand4
+  // document.getElementById("lbrand2").innerHTML="Brand: " + brand4
+  // document.getElementById("lbrand3").innerHTML="Brand: " + brand4
+  // document.getElementById("lbrand4").innerHTML="Brand: " + brand4
 
 
 
@@ -238,3 +238,14 @@ fetch('https://dummyjson.com/products')
 
 
 })
+function addtocart(x){
+  // let product_name=x.previousElementSibling.previousElementSibling.previousElementSibling.innerHTML
+  let product_name= x.previousElementSibling.previousElementSibling.previousElementSibling.previousElementSibling.previousElementSibling.previousElementSibling.innerHTML;
+  let product_price=x.previousElementSibling.previousElementSibling.previousElementSibling.previousElementSibling.innerHTML;
+  // let product_image=x.previousElementSibling.previousElementSibling.previousElementSibling.previousElementSibling.previousElementSibling.previousElementSibling.previousElementSibling
+
+  const all_item=JSON.stringify([product_name,product_price])
+  localStorage.setItem(product_name,all_item);
+
+
+}

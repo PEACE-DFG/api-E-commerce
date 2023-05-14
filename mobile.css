@@ -33,6 +33,12 @@
 }.busted{
     margin-left: 90px;
 }
+.bang{
+    position: fixed;
+    top: 600px;
+    z-index: 4;
+
+}
 @media(max-width:500px){
     .word{
          font-size: 10px;

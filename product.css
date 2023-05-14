@@ -11,30 +11,31 @@
     box-shadow: 3px 3px 2px grey;
    
 }
+.bang{
+    position: fixed;
+    top: 600px;
+    z-index: 4;
 
+}
 @media(max-width:513px){
     .card{
         color: black;
         text-align: center;
         margin: auto;
     }
-
+    .brand{
+        border: 1px solid grey;
+        padding: 10px;
+    }
+    .branding{
+        border: 1px solid grey;
+        padding: 10px;
+    }
+    .busted{
+        margin-left: 90px;
+    }
 }
 
-.brand{
-    border: 1px solid grey;
-    padding: 10px;
-}
-
-.branding{
-    border: 1px solid grey;
-    padding: 10px;
-
-
-
-}.busted{
-    margin-left: 90px;
-}
 @media(max-width:500px){
     .word{
          font-size: 10px;

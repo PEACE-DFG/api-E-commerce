@@ -25,6 +25,12 @@
     color: whitesmoke;
 
 }
+.bang{
+    position: fixed;
+    top: 600px;
+    z-index: 4;
+
+}
 .card{
     color: black;
     margin: auto;

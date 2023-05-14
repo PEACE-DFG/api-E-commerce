@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cart.css">
+    <link rel="stylesheet" href="bootstrap/all.min.css">
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <title>https://Arik.biz_cart.org</title>
+    <link rel="shortcut icon" href="images/icons8-kik-instant-messenger-logo-from-the-canadian-company-kik-interactive-tal-revivo-light-96.png" type="image/x-icon">
+
+</head>
+<body >
+
+
+    <nav class="navbar navbar-light bg-light fixed-top ">
+        <div class="container-fluid">
+            <a class="navbar-brand fa-fade" href="#"> <i   style="font-size: 40px; " class="fa fa-snowflake fa-spin rotate"></i><span class="display-5  title">  Arik.Biz</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><span>Menu</span></h5>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html"><span>Home</span></a>
+                  </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="product.html"><span>Products</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"><span>Shop</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="cart.html"><span><i class="fa-solid fa-shopping-cart"> Cart</i></span></a>
+                  </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Categories
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                    <li><a class="dropdown-item" href="mobile_laptops.html">Mobiles & Laptops     <i class="fa-solid fa-arrow-right"></i></a></li>
+                    <li><a class="dropdown-item" href="#">Perfume & Scents   <i class="fa-solid fa-arrow-right"></i></a></li>
+                    <li><a class="dropdown-item" href="#">Skin & Beauty   <i class="fa-solid fa-arrow-right"></i></a></li>
+                    <li><a class="dropdown-item" href="#">Foods & Drinks  <i class="fa-solid fa-arrow-right"></i></a></li>
+                    <li><a class="dropdown-item" href="#">  Household Ligthening  <i class="fa-solid fa-arrow-right"></i></a></li>
+                    <li><a class="dropdown-item" href="#">HandCrafts  <i class="fa-solid fa-arrow-right"></i></a></li>
+                    <li><a class="dropdown-item" href="#">KeyHolders   <i class="fa-solid fa-arrow-right"></i></a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Blog</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+<!-- cart display section -->
+            <section class=" container-fluid nextpart">
+
+                <div class="icon">
+                <p ><i class="fa-solid fa-cart-plus do"></i></p>
+                </div>
+
+                <!-- <div class="text-center">
+                    <button type="button" class="btn btn-lg btn-warning mt-5" > ADD TO CART</button>
+                    <button type="button" class="btn btn-outline-warning bg-white text-warning mt-5 btn-large">Start Shopping</button>
+
+                </div> -->
+
+            </section>
+
+      <!-- <section class=" mt-5">
+        <div class="container mt-5">
+            <div class="border  mt-5 bg-white">
+
+
+            </div>
+
+        </div>
+
+
+
+      </section> -->
+      <section class=" container new mt-5">
+
+        <div class="carts">
+            <h1>CARTS</h1>
+           
+        </div>
+       <div class="bang">
+        <button type="button" class="btn btn-warning position-relative  btn-lg">
+          <i class="fa-solid fa-shopping-cart"></i> Items
+          <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" id="counts" style="font-size: 25px;">
+            0
+            <span class="visually-hidden">selected items</span>
+          </span>
+        </button>
+       </div>
+
+<!-- 
+        <div style="display: flex; justify-content:space-around; flex-wrap:wrap" class="items mb-4">
+            <div class="quantity">ITEMS</div>
+            <div class="quantity"> PRICES</div>
+            <div class="quantity">Qnt/Qnts</div>
+            <div class="quantity">Tasks</div>
+        </div> -->
+
+
+      </section>
+
+
+    
+
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="local.js"></script>
+</body>
+</html>

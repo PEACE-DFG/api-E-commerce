@@ -35,7 +35,7 @@
                   <a class="nav-link" href="#"><span>Shop</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#"><span><i class="fa-solid fa-shopping-cart"> Cart</i></span></a>
+                    <a class="nav-link" href="cart.html"><span><i class="fa-solid fa-shopping-cart"> Cart</i></span></a>
                   </li>
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -125,6 +125,16 @@
           </div>
       </section>
 
+      <div class="bang">
+      <button type="button" class="btn btn-warning position-relative   btn-lg "  >
+        <i class="fa-solid fa-shopping-cart"></i> Items
+        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" id="counts" style="font-size: 25px;">
+          0
+          <span class="visually-hidden">selected items</span>
+        </span>
+      </button>
+    </div>
+
       <section class="container-fluid mt-0 pt-0 w-100 h-100">
         <div class="row gy-4">
             <div class="col ">
@@ -143,7 +153,7 @@
                       <p class="mt-3 text-success" id="pdiscount"></p>
                       <p id="prating" class="mt-2 text-info"></p>
                       <p id="pstock" class="mt-2 mb-4 text-warning"></p>
-                      <button type="button" class="btn btn-warning btn-lg"><i class="fa-solid fa-shopping-cart"></i>ADD TO CART</button>
+                      <button type="button" class="btn btn-warning btn-lg" onclick="addtocart(this)"><i class="fa-solid fa-shopping-cart"></i>ADD TO CART</button>
 
                       
 
@@ -166,13 +176,14 @@
                       <p class="mt-3 text-success" id="pdiscount1"></p>
                       <p id="prating1" class="mt-1 text-info"></p>
                       <p id="pstock1" class="mt-1 mb-4 text-warning"></p>
-                      <button type="button" class="btn btn-warning btn-lg"><i class="fa-solid fa-shopping-cart"></i>ADD TO CART</button>
+                      <button type="button" class="btn btn-warning btn-lg" onclick="addtocart(this)"><i class="fa-solid fa-shopping-cart"></i>ADD TO CART</button>
 
 
                     </div>
                   </div>
 
             </div>
+           
             <div class="col">
                 <div class="card" style="width: 15rem;">
                     <img id="pimage3" class="card-img-top" alt="...">
@@ -181,13 +192,12 @@
                     <div class="card-body">
                       <h5 class="card-title" id="ptitle2"></h5>
                       <h6 id="pbrand1"><i></i></h6>
-
                       <p class="card-text"  id="pdescription2"></p>
                       <a href="#" class="btn btn-primary" id="pprice2"></a>
                       <p class="mt-1 text-success" id="pdiscount2"></p>
                       <p id="prating2" class=" text-info"></p>
                       <p id="pstock2" class=" text-warning"></p>
-                      <button type="button" class="btn btn-warning btn-lg"><i class="fa-solid fa-shopping-cart"></i>ADD TO CART</button>
+                      <button type="button" class="btn btn-warning btn-lg" onclick="addtocart(this)"><i class="fa-solid fa-shopping-cart"></i>ADD TO CART</button>
 
 
                     </div>
@@ -198,17 +208,15 @@
                 <div class="card" style="width: 15rem;">
                     <img id="pimage4" class="card-img-top" alt="...">
                 <p ><i class="fa-solid fa-star  " style="color: orange;"></i><i class="fa-solid fa-star  " style="color: orange;"></i><i class="fa-solid fa-star  " style="color: orange;"></i><i class="fa-solid fa-star  " style="color: orange;"></i><i class="fa-solid fa-star  " style="color: orange;"></i></p>
-
                     <div class="card-body">
                       <h5 class="card-title" id="ptitle3"></h5>
                       <h6 id="pbrand2"><i></i></h6>
-
                       <p class="card-text"  id="pdescription3"></p>
                       <a href="#" class="btn btn-primary" id="pprice3"></a>
                       <p class="mt-3 text-success" id="pdiscount3"></p>
                       <p id="prating3" class="mt-1 text-info"></p>
                       <p id="pstock3" class="mt-1 mb-3 text-warning"></p>
-                      <button type="button" class="btn btn-warning btn-lg"><i class="fa-solid fa-shopping-cart"></i>ADD TO CART</button>
+                      <button type="button" class="btn btn-warning btn-lg" onclick="addtocart(this)"><i class="fa-solid fa-shopping-cart"></i>ADD TO CART</button>
 
 
                     </div>
@@ -230,7 +238,7 @@
                       <p class="mt-3 text-success" id="pdiscount4"></p>
                       <p id="prating4" class="mt-1 text-info"></p>
                       <p id="pstock4" class="mt-2 mb-4 text-warning"></p>
-                      <button type="button" class="btn btn-warning btn-lg"><i class="fa-solid fa-shopping-cart"></i>ADD TO CART</button>
+                      <button type="button" class="btn btn-warning btn-lg" onclick="addtocart(this)"><i class="fa-solid fa-shopping-cart"></i>ADD TO CART</button>
 
 
                     </div>
@@ -279,7 +287,7 @@
                       <p class="mt-3 text-success" id="gdiscount"></p>
                       <p id="grating" class="mt-2 text-info"></p>
                       <p id="gstock" class="mt-2  text-warning"></p>
-                      <button type="button" class="btn btn-warning btn-lg"><i class="fa-solid fa-shopping-cart"></i>ADD TO CART</button>
+                      <button type="button" class="btn btn-warning btn-lg" onclick="addtocart(this)"><i class="fa-solid fa-shopping-cart"></i>ADD TO CART</button>
 
                       
 
@@ -302,7 +310,7 @@
                       <p class="mt-4 text-success" id="gdiscount1"></p>
                       <p id="grating1" class="mt-4 mb-3 text-info"></p>
                       <p id="gstock1" class="mt-4 mb-4 text-warning"></p>
-                      <button type="button" class="btn btn-warning btn-lg"><i class="fa-solid fa-shopping-cart"></i>ADD TO CART</button>
+                      <button type="button" class="btn btn-warning btn-lg" onclick="addtocart(this)"><i class="fa-solid fa-shopping-cart"></i>ADD TO CART</button>
 
 
                     </div>
@@ -323,7 +331,7 @@
                       <p class="mt-1 text-success" id="gdiscount2"></p>
                       <p id="grating2" class=" text-info"></p>
                       <p id="gstock2" class=" text-warning"></p>
-                      <button type="button" class="btn btn-warning btn-lg"><i class="fa-solid fa-shopping-cart"></i>ADD TO CART</button>
+                      <button type="button" class="btn btn-warning btn-lg" onclick="addtocart(this)"><i class="fa-solid fa-shopping-cart"></i>ADD TO CART</button>
 
 
                     </div>
@@ -344,7 +352,7 @@
                       <p class="mt-3 text-success" id="gdiscount3"></p>
                       <p id="grating3" class="mt-1 text-info"></p>
                       <p id="gstock3" class="mt-1 mb-3 text-warning"></p>
-                      <button type="button" class="btn btn-warning btn-lg"><i class="fa-solid fa-shopping-cart"></i>ADD TO CART</button>
+                      <button type="button" class="btn btn-warning btn-lg" onclick="addtocart(this)"><i class="fa-solid fa-shopping-cart"></i>ADD TO CART</button>
 
 
                     </div>
@@ -366,7 +374,7 @@
                       <p class="mt-3 text-success" id="gdiscount4"></p>
                       <p id="grating4" class="mt-1 text-info"></p>
                       <p id="gstock4" class="mt-2 mb-4 text-warning"></p>
-                      <button type="button" class="btn btn-warning btn-lg"><i class="fa-solid fa-shopping-cart"></i>ADD TO CART</button>
+                      <button type="button" class="btn btn-warning btn-lg" onclick="addtocart(this)"><i class="fa-solid fa-shopping-cart"></i>ADD TO CART</button>
 
 
                     </div>
@@ -413,7 +421,7 @@
                       <p class="mt-3 text-success" id="sdiscount"></p>
                       <p id="srating" class="mt-2 text-info"></p>
                       <p id="sstock" class="mt-2  text-warning"></p>
-                      <button type="button" class="btn btn-warning btn-lg"><i class="fa-solid fa-shopping-cart"></i>ADD TO CART</button>
+                      <button type="button" class="btn btn-warning btn-lg" onclick="addtocart(this)"><i class="fa-solid fa-shopping-cart"></i>ADD TO CART</button>
 
                       
 
@@ -430,13 +438,12 @@
                     <div class="card-body ">
                       <h5 class="card-title " id="stitle1"></h5>
                       <h6 id="sbrand4" class=" "><i></i></h6>
-
                       <p class="card-text"  id="sdescription1"></p>
                       <a href="#" class="btn btn-primary" id="sprice1"></a>
                       <p class="mt-3 text-success" id="sdiscount1"></p>
                       <p id="srating1" class="mt-1  text-info"></p>
                       <p id="sstock1" class="mt-1 text-warning"></p>
-                      <button type="button" class="btn btn-warning btn-lg"><i class="fa-solid fa-shopping-cart"></i>ADD TO CART</button>
+                      <button type="button" class="btn btn-warning btn-lg" onclick="addtocart(this)"><i class="fa-solid fa-shopping-cart"></i>ADD TO CART</button>
 
 
                     </div>
@@ -457,7 +464,7 @@
                       <p class="mt-3 text-success" id="sdiscount2"></p>
                       <p id="srating2" class=" text-info"></p>
                       <p id="sstock2" class=" text-warning"></p>
-                      <button type="button" class="btn btn-warning btn-lg"><i class="fa-solid fa-shopping-cart"></i>ADD TO CART</button>
+                      <button type="button" class="btn btn-warning btn-lg" onclick="addtocart(this)"><i class="fa-solid fa-shopping-cart"></i>ADD TO CART</button>
 
 
                     </div>
@@ -478,7 +485,7 @@
                       <p class="mt-4 text-success" id="sdiscount3"></p>
                       <p id="srating3" class="mt-1 text-info"></p>
                       <p id="sstock3" class="mt-1 mb-3 text-warning"></p>
-                      <button type="button" class="btn btn-warning btn-lg"><i class="fa-solid fa-shopping-cart"></i>ADD TO CART</button>
+                      <button type="button" class="btn btn-warning btn-lg" onclick="addtocart(this)"><i class="fa-solid fa-shopping-cart"></i>ADD TO CART</button>
 
 
                     </div>
@@ -500,7 +507,7 @@
                       <p class="mt-3 text-success" id="sdiscount4"></p>
                       <p id="srating4" class="mt-1 text-info"></p>
                       <p id="sstock4" class="mt-2 mb-3 text-warning"></p>
-                      <button type="button" class="btn btn-warning btn-lg"><i class="fa-solid fa-shopping-cart"></i>ADD TO CART</button>
+                      <button type="button" class="btn btn-warning btn-lg" onclick="addtocart(this)"><i class="fa-solid fa-shopping-cart"></i>ADD TO CART</button>
 
 
                     </div>
@@ -549,7 +556,7 @@
                       <p class="mt-4 text-success" id="ldiscount"></p>
                       <p id="lrating" class="mt-4 text-info"></p>
                       <p id="lstock" class="mt-4  text-warning"></p>
-                      <button type="button" class="btn btn-warning btn-lg"><i class="fa-solid fa-shopping-cart"></i>ADD TO CART</button>
+                      <button type="button" class="btn btn-warning btn-lg" onclick="addtocart(this)"><i class="fa-solid fa-shopping-cart"></i>ADD TO CART</button>
 
                       
 
@@ -572,7 +579,7 @@
                       <p class="mt-3 text-success" id="ldiscount1"></p>
                       <p id="lrating1" class="mt-1  text-info"></p>
                       <p id="lstock1" class="mt-1 text-warning"></p>
-                      <button type="button" class="btn btn-warning btn-lg"><i class="fa-solid fa-shopping-cart"></i>ADD TO CART</button>
+                      <button type="button" class="btn btn-warning btn-lg" onclick="addtocart(this)"><i class="fa-solid fa-shopping-cart"></i>ADD TO CART</button>
 
 
                     </div>
@@ -593,7 +600,7 @@
                       <p class="mt-4 text-success" id="ldiscount2"></p>
                       <p id="lrating2" class=" mt-4 text-info"></p>
                       <p id="lstock2" class=" mt-4 text-warning"></p>
-                      <button type="button" class="btn btn-warning btn-lg"><i class="fa-solid fa-shopping-cart"></i>ADD TO CART</button>
+                      <button type="button" class="btn btn-warning btn-lg" onclick="addtocart(this)"><i class="fa-solid fa-shopping-cart"></i>ADD TO CART</button>
 
 
                     </div>
@@ -614,7 +621,7 @@
                       <p class="mt-4 text-success" id="ldiscount3"></p>
                       <p id="lrating3" class="mt-4 text-info"></p>
                       <p id="lstock3" class="mt-3 mb-3 text-warning"></p>
-                      <button type="button" class="btn btn-warning btn-lg"><i class="fa-solid fa-shopping-cart"></i>ADD TO CART</button>
+                      <button type="button" class="btn btn-warning btn-lg" onclick="addtocart(this)"><i class="fa-solid fa-shopping-cart"></i>ADD TO CART</button>
 
 
                     </div>
@@ -625,18 +632,17 @@
             <div class="col">
                 <div class="card" style="width: 15rem;">
                     <img id="limage5" class="card-img-top" alt="...">
-                <p ><i class="fa-solid fa-star  " style="color: orange;"></i><i class="fa-solid fa-star  " style="color: orange;"></i><i class="fa-solid fa-star  " style="color: orange;"></i><i class="fa-solid fa-star  " style="color: orange;"></i><i class="fa-solid fa-star  " style="color: orange;"></i></p>
+                   <p ><i class="fa-solid fa-star  " style="color: orange;"></i><i class="fa-solid fa-star  " style="color: orange;"></i><i class="fa-solid fa-star  " style="color: orange;"></i><i class="fa-solid fa-star  " style="color: orange;"></i><i class="fa-solid fa-star  " style="color: orange;"></i></p>
 
                     <div class="card-body mt-4">
                       <h5 class="card-title mt-3" id="ltitle4"></h5>
                       <h6 id="lbrand3"><i></i></h6>
-
                       <p class="card-text mt-3"  id="ldescription4"></p>
                       <a href="#" class="btn btn-primary" id="lprice4"></a>
                       <p class="mt-3 text-success" id="ldiscount4"></p>
                       <p id="lrating4" class="mt-4 text-info"></p>
                       <p id="lstock4" class="mt-4 mb-3 text-warning"></p>
-                      <button type="button" class="btn btn-warning btn-lg"><i class="fa-solid fa-shopping-cart"></i>ADD TO CART</button>
+                      <button type="button" class="btn btn-warning btn-lg" onclick="addtocart(this)"><i class="fa-solid fa-shopping-cart"></i>ADD TO CART</button>
 
 
                     </div>
@@ -739,5 +745,6 @@
     <script src="js/bootstrap.bundle.min.js"></script>
     <!-- <script src="index.js"></script> -->
     <script src="product.js"></script>
+    <!-- <script src="local.js"></script> -->
 </body>
 </html>

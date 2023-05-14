@@ -15,3 +15,9 @@
     box-shadow: 3px 3px 2px grey;
    
 }
+.bang{
+    position: fixed;
+    top: 600px;
+    z-index: 4;
+
+}

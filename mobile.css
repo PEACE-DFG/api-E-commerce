@@ -8,6 +8,7 @@
 .card{
     color: black;
     margin: auto;
+    width: fit-content;
 
 }
 @media(max-width:513px){

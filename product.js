@@ -324,8 +324,8 @@ function addtocart(x){
 
     let product_name= x.previousElementSibling.previousElementSibling.previousElementSibling.previousElementSibling.previousElementSibling.previousElementSibling.previousElementSibling.innerHTML;
     let product_price=x.previousElementSibling.previousElementSibling.previousElementSibling.previousElementSibling.innerHTML;
-    // let product_image=x.previousElementSibling.previousElementSibling.previousElementSibling.previousElementSibling.previousElementSibling.previousElementSibling.previousElementSibling
-    const all_item=JSON.stringify([product_name,product_price])
+    let product_image=x.previousElementSibling.previousElementSibling.previousElementSibling.previousElementSibling.previousElementSibling.previousElementSibling.previousElementSibling.previousElementSibling.previousElementSibling.src
+    const all_item=JSON.stringify([product_name,product_image,product_price])
     localStorage.setItem(product_name,all_item);
 
     count_item.innerHTML=localStorage.length

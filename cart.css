@@ -56,3 +56,10 @@
     border-radius: 30px;
     box-shadow: 8px 8px 4px grey;
 }
+@media(max-width:590px){
+    .flex{
+        display: block;
+        margin: auto;
+        text-align: center;
+    }
+}

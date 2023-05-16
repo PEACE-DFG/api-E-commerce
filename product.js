@@ -51,11 +51,11 @@ fetch('https://dummyjson.com/products')
 
 
 
-    document.getElementById("pprice").innerHTML="$ " + price1
-    document.getElementById("pprice1").innerHTML="$ " + price1
-    document.getElementById("pprice2").innerHTML="$ " + price1
-    document.getElementById("pprice3").innerHTML="$ " + price1
-    document.getElementById("pprice4").innerHTML="$ " + price1
+    document.getElementById("pprice").innerHTML=" " + price1
+    document.getElementById("pprice1").innerHTML=" " + price1
+    document.getElementById("pprice2").innerHTML=" " + price1
+    document.getElementById("pprice3").innerHTML=" " + price1
+    document.getElementById("pprice4").innerHTML=" " + price1
 
 
     document.getElementById("pdiscount").innerHTML= "Discount =>" + discount1
@@ -126,11 +126,11 @@ fetch('https://dummyjson.com/products')
     document.getElementById("gdiscount4").innerHTML= "Discount =>" + discount2
 
 
-    document.getElementById("gprice").innerHTML="$ " + price2
-    document.getElementById("gprice1").innerHTML="$ " + price2
-    document.getElementById("gprice2").innerHTML="$ " + price2
-    document.getElementById("gprice3").innerHTML="$ " + price2
-    document.getElementById("gprice4").innerHTML="$ " + price2
+    document.getElementById("gprice").innerHTML=" " + price2
+    document.getElementById("gprice1").innerHTML=" " + price2
+    document.getElementById("gprice2").innerHTML=" " + price2
+    document.getElementById("gprice3").innerHTML=" " + price2
+    document.getElementById("gprice4").innerHTML=" " + price2
 
 
     document.getElementById("grating").innerHTML="Rating => " + rating2
@@ -219,11 +219,11 @@ fetch('https://dummyjson.com/products')
 
 
 
-    document.getElementById("sprice").innerHTML="$ " + price3
-    document.getElementById("sprice1").innerHTML="$ " + price3
-    document.getElementById("sprice2").innerHTML="$ " + price3
-    document.getElementById("sprice3").innerHTML="$ " + price3
-    document.getElementById("sprice4").innerHTML="$ " + price3
+    document.getElementById("sprice").innerHTML=" " + price3
+    document.getElementById("sprice1").innerHTML=" " + price3
+    document.getElementById("sprice2").innerHTML=" " + price3
+    document.getElementById("sprice3").innerHTML=" " + price3
+    document.getElementById("sprice4").innerHTML=" " + price3
 
 
     document.getElementById("simage1").src=simage1
@@ -295,11 +295,11 @@ fetch('https://dummyjson.com/products')
     document.getElementById("lstock4").innerHTML="Stock => " + stock4
 
 
-    document.getElementById("lprice").innerHTML="$ " + price4
-    document.getElementById("lprice1").innerHTML="$ " + price4
-    document.getElementById("lprice2").innerHTML="$ " + price4
-    document.getElementById("lprice3").innerHTML="$ " + price4
-    document.getElementById("lprice4").innerHTML="$ " + price4
+    document.getElementById("lprice").innerHTML=" " + price4
+    document.getElementById("lprice1").innerHTML=" " + price4
+    document.getElementById("lprice2").innerHTML=" " + price4
+    document.getElementById("lprice3").innerHTML=" " + price4
+    document.getElementById("lprice4").innerHTML="" + price4
 
 
     document.getElementById("limage1").src=limage1

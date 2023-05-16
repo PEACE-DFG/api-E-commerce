@@ -16,7 +16,7 @@ fetch('https://dummyjson.com/products')
     document.getElementById('image1').src=image1
     document.getElementById('brand').innerHTML="Brand : " + brand
     document.getElementById('description').innerHTML="Description: " + description
-    document.getElementById('price').innerHTML="$" + price
+    document.getElementById('price').innerHTML="" + price
     document.getElementById('title').innerHTML=title
     document.getElementById('discount').innerHTML="Discount: " + discount
     document.getElementById('rating').innerHTML="Rating: " + rating
@@ -36,7 +36,7 @@ fetch('https://dummyjson.com/products')
     document.getElementById('image2').src=image2
     document.getElementById('brand2').innerHTML="Brand : " + brand2
     document.getElementById('description2').innerHTML="Description: " + description2
-    document.getElementById('price2').innerHTML="$" + price2
+    document.getElementById('price2').innerHTML="" + price2
     document.getElementById('title2').innerHTML=title2
     document.getElementById('discount2').innerHTML="Discount: " + discount2
     document.getElementById('rating2').innerHTML="Rating: " + rating2
@@ -57,7 +57,7 @@ fetch('https://dummyjson.com/products')
     document.getElementById('image3').src=image3
     document.getElementById('brand3').innerHTML="Brand : " + brand3
     document.getElementById('description3').innerHTML="Description: " + description3
-    document.getElementById('price3').innerHTML="$" + price3
+    document.getElementById('price3').innerHTML="" + price3
     document.getElementById('title3').innerHTML=title3
     document.getElementById('discount3').innerHTML="Discount: " + discount3
     document.getElementById('rating3').innerHTML="Rating: " + rating3
@@ -77,7 +77,7 @@ fetch('https://dummyjson.com/products')
     document.getElementById('image4').src=image4
     document.getElementById('brand4').innerHTML="Brand : " + brand4
     document.getElementById('description4').innerHTML="Description: " + description4
-    document.getElementById('price4').innerHTML="$" + price4
+    document.getElementById('price4').innerHTML="" + price4
     document.getElementById('title4').innerHTML=title4
     document.getElementById('discount4').innerHTML="Discount: " + discount4
     document.getElementById('rating4').innerHTML="Rating: " + rating4
@@ -98,7 +98,7 @@ fetch('https://dummyjson.com/products')
     document.getElementById('image5').src=image5
     document.getElementById('brand5').innerHTML="Brand : " + brand5
     document.getElementById('description5').innerHTML="Description: " + description5
-    document.getElementById('price5').innerHTML= "$" + price5
+    document.getElementById('price5').innerHTML= "" + price5
     document.getElementById('title5').innerHTML=title5
     document.getElementById('discount2').innerHTML="Discount: " + discount5
     document.getElementById('rating5').innerHTML="Rating: " + rating5

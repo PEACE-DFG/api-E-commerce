@@ -49,3 +49,10 @@
     z-index: 4;
 
 }
+.flex{
+    display: flex;
+    border: 2px solid whitesmoke;
+    margin: 30px;
+    border-radius: 30px;
+    box-shadow: 8px 8px 4px grey;
+}

@@ -31,6 +31,13 @@
     z-index: 4;
 
 }
+.border{
+    border-radius: 20px;
+    box-shadow: 5px 5px 3px grey;
+}
+.carousel-caption{
+    background-color: rgb(0, 0, 0,0.6);
+}
 .card{
     color: black;
     margin: auto;

@@ -1,11 +1,11 @@
 .nextpart{
-    background-image: url("images/online-gd83db0d4e_1920.jpg");
+    background-image: url("images/online-shopping-g09d1c582a_1920.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     opacity: 0.9;
     width: 100%;
-    height: 400px;
+    height: 550px;
 }
 .icon{
     padding-top: 100px;
@@ -45,8 +45,8 @@
 }
 .bang{
     position: fixed;
-    top: 450px;
-    z-index: 4;
+    top: 560px;
+    z-index: 10;
 
 }
 .flex{

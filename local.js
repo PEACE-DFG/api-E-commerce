@@ -2,6 +2,7 @@ let count_item= document.getElementById('counts')
   count_item.innerHTML=localStorage.length
 
 function addtocart(x){
+  window.alert("Item Has Been Added To Cart")
 
     let product_name= x.previousElementSibling.previousElementSibling.previousElementSibling.previousElementSibling.previousElementSibling.previousElementSibling.previousElementSibling.innerHTML;
     let product_price=x.previousElementSibling.previousElementSibling.previousElementSibling.previousElementSibling.innerHTML;

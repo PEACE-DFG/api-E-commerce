@@ -17,10 +17,11 @@ for(let i=0;i<localStorage.length;i++){
     </div>
     <div>
       <h5 class="card-title">${all_product[0]}</h5>
-      <p class="card-text"> ${all_product[2]}</p>
+      <p class="card-text"> ${"" + all_product[2]}</p>
       Quantity:
     <input type ="number" onchange="change_num(this)" onkeyup="change_num(this)" id="num" value ="1">
     <span id="totalss">${all_product[2]}</span>
+    
     <span><button class ="btn btn-danger" onclick="delete_product(this)">Remove</button></span>
     
     </div> 
@@ -34,7 +35,7 @@ for(let i=0;i<localStorage.length;i++){
 }
  
 function change_num(y) {
-  y.nextElementSibling.innerHTML ="#"+ y.value * y.previousElementSibling.innerHTML.slice(1)
+  y.nextElementSibling.innerHTML ="$"+ y.value * y.previousElementSibling.innerHTML.slice(1)
 } 
 // console.log(totalss.length)
 console.log(amounts)
